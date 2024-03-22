@@ -7,7 +7,7 @@ import "./randomChar.scss";
 import mjolnir from "../../resources/img/mjolnir.png";
 
 const RandomChar = () => {
-  const [char, setChar] = useState(null);
+  const [char, setChar] = useState({});
   const { loading, error, getCharacter, clearError } = useMarvelService();
 
   useEffect(() => {
